@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-10 | FlexBox Properties </title>
+<style>
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+
+.flex-container1 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: DodgerBlue;
+}
+
+.flex-container2 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+}
+
+.flex-container3 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container4 {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: DodgerBlue;
+}
+
+.flex-container4 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container5 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container5 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container6 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container6>div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container7 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: DodgerBlue;
+}
+
+.flex-container7 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container8 {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container8 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container9 {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container9 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container10 {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container10 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container11 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  overflow: scroll;
+  background-color: DodgerBlue;
+}
+
+.flex-container11 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Day-10 | FlexBox Properties</h1>
+<h1>CSS Flex Container</h1>
+<h2>Parent Element (Container)</h2>
+<h4>Like we specified in the previous chapter, this is a flex container (the blue area) with three flex items:</h4>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+
+<h4>The flex container becomes flexible by setting the display property to flex:</h4>
+<h4>The flex container properties are:</h4>
+<h4>1.flex-direction</h4>
+<h4>2.flex-wrap</h4>
+<h4>3.flex-flow</h4>
+<h4>4.justify-content</h4>
+<h4>5.align-items</h4>
+<h4>6.align-content</h4>
+
+<h2>1.The flex-direction Property</h2>
+<h4>The flex-direction property defines in which direction the container wants to stack the flex items.</h4>
+<div class="flex-container1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+</div>
+
+<h4>Example</h4>
+<h4>The column-reverse value stacks the flex items vertically (but from bottom to top):</h4>
+<div class="flex-container2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+</div>
+
+<h4>Example</h4>
+<h4>The row value stacks the flex items horizontally (from left to right):</h4>
+<div class="flex-container3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+</div>
+ 
+<h4>Example</h4>
+<h4>The row-reverse value stacks the flex items horizontally (but from right to left):</h4>
+<div class="flex-container4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+
+<h2>2.The flex-wrap Property</h2>
+<h4>The flex-wrap property specifies whether the flex items should wrap or not.</h4>
+<h4>The examples below have 12 flex items, to better demonstrate the flex-wrap property.</h4>
+<div class="flex-container5">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>  
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>  
+  </div>
+
+<h4>Example</h4>
+<h4>The nowrap value specifies that the flex items will not wrap (this is default):</h4>
+<div class="flex-container6">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>  
+    <div>10</div>
+    <div>11</div>
+    <div>12</div> 
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>   
+  </div>
+  
+<h4>Example</h4>
+<h4>The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order:</h4>
+<div class="flex-container7">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>  
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>    
+</div>
+
+<h2>3.The flex-flow Property</h2>
+<h4>The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.</h4>
+<div class="flex-container8">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>  
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>    
+  </div>
+
+  <h2>4.The justify-content Property</h2>
+  <h4>The justify-content property is used to align the flex items:</h4>
+  <h4>Example</h4>
+  <div class="flex-container9">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+ 
+<h2>5.The align-items Property</h2>
+<h4>The align-items property is used to align the flex items.</h4>
+<h4>Example</h4>
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+ 
+<h2>6.The align-content Property</h2>
+<h4>The align-content property is used to align the flex lines.</h4>
+<h4>Example</h4>
+<div class="flex-container11">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>  
+    <div>10</div>
+    <div>11</div>
+    <div>12</div> 
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>  
+  </div>
+  
+</body>
+</html>
+
+
